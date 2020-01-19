@@ -1,0 +1,12 @@
+#ifndef SATURATION_GLOBAL_H
+#define SATURATION_GLOBAL_H
+
+#include <QtCore/qglobal.h>
+
+#if defined(SATURATION_LIBRARY)
+#  define SATURATION_EXPORT Q_DECL_EXPORT
+#else
+#  define SATURATION_EXPORT Q_DECL_IMPORT
+#endif
+
+#endif // SATURATION_GLOBAL_H
